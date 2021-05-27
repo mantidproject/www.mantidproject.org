@@ -2,6 +2,14 @@
 
 #table-of-contents { border: none; }
 
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
 /*-------------------- $NAV --------------------*/
 
 .navbar-version { display: none; }
@@ -18,9 +26,23 @@ a:hover {
   text-decoration: underline;
 }
 
+button {
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 5px 25px;
+}
+
+button.green {
+  background-color: #009933;
+  color: white;
+}
+
 /*-------------------- $SPACING --------------------*/
 
-body { font-size: 1.6em; } /* 16px */
+body { 
+  font-size: 1.6em; 
+  padding-top: 51px;
+} /* 16px */
 
 h1{
   margin-top: 0;
@@ -84,6 +106,12 @@ td, th {
   padding: .75em;
   border: 1px solid #CCC;
   text-align: left;
+}
+
+/*-------------------- $INDEX-PAGE --------------------*/
+
+#title-banner {
+  padding: 20px 0px;
 }
 
 /*-------------------- $SPHINX-OVERRIDES --------------------*/
