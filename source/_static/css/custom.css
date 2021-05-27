@@ -2,6 +2,10 @@
 
 #table-of-contents { border: none; }
 
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 .flex {
   display: flex;
 }
