@@ -14,6 +14,10 @@
   align-items: center;
 }
 
+p {
+  margin: 0 0 20px;
+}
+
 /*-------------------- $NAV --------------------*/
 
 .navbar-version { display: none; }
@@ -110,12 +114,6 @@ td, th {
   padding: .75em;
   border: 1px solid #CCC;
   text-align: left;
-}
-
-/*-------------------- $INDEX-PAGE --------------------*/
-
-#title-banner {
-  padding: 20px 0px;
 }
 
 /*-------------------- $SPHINX-OVERRIDES --------------------*/

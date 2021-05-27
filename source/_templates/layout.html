@@ -1,4 +1,15 @@
 {% extends "!layout.html" %}
+
+{% block extrahead %}
+    {# Get Roboto font from Google #}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    {% if pagename == "index" %}
+        <link rel="stylesheet" type="text/css" href="_static/css/index.css">
+    {% endif %}
+{% endblock %}
+
 {% block content %}
     {% if pagename == "index" %}
         <div class="container">
@@ -16,7 +27,7 @@
                     <button>User Docs</button>
                 </div>
             </div>
-        </div>
+        </div> 
     {% endif %}
     {{ super() }}
 {% endblock %}
