@@ -12,33 +12,8 @@
 
 {% block content %}
     {% if pagename == "index" %}
-        <div class="container" id="title-container">
-            <div class="row flex items-center">
-                <div class="col-sm-4 hidden-xs text-center">
-                    <img src="{{ pathto('_static/images/mantid.png', 1) }}">
-                </div>
-                <div class="col-sm-8">
-                    <h1>Mantid - High performance 
-                        data reduction and visualisation </h1>
-                    <p>Created to manipulate and analyse neutron scattering 
-                        and muon spectroscopy data, as well as many other techniques. 
-                        Open source and supported on a variety of platforms.</p>
-                    <button class="green">Get Started</button>
-                    <button>User Docs</button>
-                </div>
-            </div>
-            <div id="title-images" class="row flex items-center"> 
-                <div class="col-xs-4 text-center">
-                    <img src="{{ pathto('_static/images/290px-MBC_PickDemo.png', 1) }}" alt="">
-                </div>
-                <div class="col-xs-4 text-center">
-                    <img src="{{ pathto('_static/images/350px-Wb-sliceviewer51-nonorthogonal.png', 1) }}" alt="">
-                </div>
-                <div class="col-xs-4 text-center">
-                    <img src="{{ pathto('_static/images/290px-ISISSANSInterface.png', 1) }}" alt="">
-                </div>
-            </div>
-        </div>
+        {% include "index.html" %}
     {% endif %}
+    
     {{ super() }}
 {% endblock %}
