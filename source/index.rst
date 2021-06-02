@@ -11,11 +11,11 @@ About Mantid
 ============
 The Mantid project provides a framework that supports high-performance computing and visualisation of materials science data.
 Mantid has been created to manipulate and analyse neutron scattering and muon spectroscopy data, but could be applied to many other techniques.
-The framework is open source and supported on multiple target platforms (Windows, Linux, Mac). It includes and benefits from many other open source projects
+The framework is `open source <https://www.mantidproject.org/Mantid_About.html#License_and_Distribution>`_ and `supported on multiple target platforms (Windows, Linux, Mac). <https://download.mantidproject.org/>`_ It includes and benefits from `many other open source projects <https://github.com/mantidproject/mantid/blob/master/DEPENDENCY_LICENSES.md>`_
 
 Development
 ===========
-Mantid is hosted on GitHub
+Mantid is hosted on `GitHub <https://github.com/mantidproject>`_. There are pages on `getting started with development <https://developer.mantidproject.org/GettingStarted.html>`_, `issue tracking <https://developer.mantidproject.org/IssueTracking.html>`_, and more on the development process, tools, testing, etc. on our `developer documentation <https://developer.mantidproject.org/>`_.
 
 Governance
 ==========
@@ -27,4 +27,4 @@ O. Arnold, et al., Mantid—Data analysis and visualization package for neutron 
 
 Mantid (2013): Manipulation and Analysis Toolkit for Instrument Data.; Mantid Project. http://dx.doi.org/10.5286/SOFTWARE/MANTID
 
-Full author list
+`Full author list <https://search.datacite.org/works/10.5286/software/mantid>`_
