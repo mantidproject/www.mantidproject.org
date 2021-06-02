@@ -29,18 +29,20 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:not(.button):hover {
   color: #009933;
   text-decoration: underline;
 }
 
-button {
+a.button {
+  background-color: whitesmoke;
   border-color: transparent;
   border-radius: 10px;
-  padding: 5px 25px;
+  padding: 7px 27px;
+  cursor: pointer;
 }
 
-button.green {
+a.button.green {
   background-color: #009933;
   color: white;
 }

@@ -14,3 +14,7 @@ h1 {
 #title-images {
     padding-top: 20px;
 }
+
+#title-container a.button {
+    margin-right: 10px;
+}
