@@ -85,28 +85,22 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 #
 html_theme_options = {
     'navbar_title': " ",  # Doesn't accept empty string
+    'navbar_class': "navbar-right", 
+    'navbar_links': [
+        ("Downloads", "https://download.mantidproject.org/", 1),
+        ("Guides", "Documentation"),
+        ("Docs", "https://developer.mantidproject.org/", 1),
+        ("News", "https://forum.mantidproject.org/c/news/8", 1),
+        ("Forums", "https://forum.mantidproject.org/", 1),
+        ("Contact Us", "Contact")
+    ],
+    'navbar_pagenav': False,
+    'source_link_position': None,
 }
 
 html_static_path = ["_static"]
 
 html_logo = "_static/images/Mantid_Logo_Transparent.png"
-
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-
-# html_additional_pages = {'index': 'index.html'}
-
-# Custom sidebar templates, must be a dictionary that maps document names
-# to template names.
-#
-# The default sidebars (for documents that don't match any pattern) are
-# defined by theme itself.  Builtin themes are using these templates by
-# default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
-# 'searchbox.html']``.
-#
-# html_sidebars = {}
-
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
