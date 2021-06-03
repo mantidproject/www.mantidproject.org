@@ -14,6 +14,10 @@
   display: flex;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -28,6 +32,27 @@ p {
 
 .navbar-default .navbar-nav>li>a {
   color: var(--color-mantid-green);
+}
+
+/*-------------------- $FOOTER --------------------*/
+
+footer {
+  border-top: 1px solid var(--color-mantid-green)
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+footer li {
+  float: left;
+}
+
+footer ul a {
+  display: block;
+  padding: 14px;
 }
 
 /*-------------------- $LINKS --------------------*/
