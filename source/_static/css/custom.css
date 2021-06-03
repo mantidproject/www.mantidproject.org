@@ -1,3 +1,7 @@
+:root {
+  --color-mantid-green: #009933;
+}
+
 /*-------------------- $GENERAL --------------------*/
 
 #table-of-contents { border: none; }
@@ -23,18 +27,18 @@ p {
 .navbar-version { display: none; }
 
 .navbar-default .navbar-nav>li>a {
-  color: #009933;
+  color: var(--color-mantid-green);
 }
 
 /*-------------------- $LINKS --------------------*/
 
 a {
-  color: #009933;
+  color: var(--color-mantid-green);
   text-decoration: none;
 }
 
 a:not(.button):hover {
-  color: #009933;
+  color: var(--color-mantid-green);
   text-decoration: underline;
 }
 
@@ -47,7 +51,7 @@ a.button {
 }
 
 a.button.green {
-  background-color: #009933;
+  background-color: var(--color-mantid-green);
   color: white;
 }
 
