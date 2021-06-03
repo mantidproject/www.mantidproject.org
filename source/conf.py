@@ -20,9 +20,9 @@ import sphinx_bootstrap_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'www.mantidproject.org'
-copyright = '2021, author'
-author = 'author'
+project = 'Mantid Project'
+copyright = '2021, Mantid'
+author = 'Mantid'
 
 # The short X.Y version
 version = ''
@@ -105,7 +105,7 @@ html_logo = "_static/images/Mantid_Logo_Transparent.png"
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'wwwmantidprojectorgdoc'
+htmlhelp_basename = 'MantidProjectdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -132,7 +132,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'wwwmantidprojectorg.tex', 'www.mantidproject.org Documentation',
+    (master_doc, 'MantidProject.tex', 'Mantid Project Documentation',
      'author', 'manual'),
 ]
 
@@ -142,7 +142,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'wwwmantidprojectorg', 'www.mantidproject.org Documentation',
+    (master_doc, 'MantidProject', 'Mantid Project Documentation',
      [author], 1)
 ]
 
@@ -153,8 +153,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'wwwmantidprojectorg', 'www.mantidproject.org Documentation',
-     author, 'wwwmantidprojectorg', 'One line description of project.',
+    (master_doc, 'MantidProject', 'Mantid Project Documentation',
+     author, 'Mantid', 'High performance data reduction and visualisation',
      'Miscellaneous'),
 ]
 
