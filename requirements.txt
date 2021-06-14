@@ -1,0 +1,3 @@
+# Requirements for building the website
+sphinx
+sphinx-bootstrap-theme
