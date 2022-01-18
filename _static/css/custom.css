@@ -1,0 +1,193 @@
+:root {
+  --color-mantid-green: #009933;
+}
+
+/*-------------------- $GENERAL --------------------*/
+
+#table-of-contents { border: none; }
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+/*-------------------- $NAV --------------------*/
+
+.navbar-version { display: none; }
+
+.navbar-default .navbar-nav>li>a {
+  color: var(--color-mantid-green);
+}
+
+/*-------------------- $FOOTER --------------------*/
+
+footer {
+  border-top: 1px solid var(--color-mantid-green)
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+footer li {
+  float: left;
+}
+
+footer ul a {
+  display: block;
+  padding: 14px;
+}
+
+/*-------------------- $LINKS --------------------*/
+
+a {
+  color: var(--color-mantid-green);
+  text-decoration: none;
+}
+
+a:not(.button):hover {
+  color: var(--color-mantid-green);
+  text-decoration: underline;
+}
+
+a.button {
+  background-color: whitesmoke;
+  border-color: transparent;
+  border-radius: 10px;
+  padding: 7px 27px;
+  cursor: pointer;
+}
+
+a.button.green {
+  background-color: var(--color-mantid-green);
+  color: white;
+}
+
+/*-------------------- $SPACING --------------------*/
+
+body { 
+  font-size: 1.6em; 
+  padding-top: 51px;
+} /* 16px */
+
+h1{
+  margin-top: 0;
+}
+
+/*-------------------- $MATH ----------------------*/
+
+img.math {
+    vertical-align: middle;
+}
+
+div.math p {
+    text-align: center;
+}
+
+span.eqno {
+    float: right;
+}
+
+/*-------------------- $IMAGES --------------------*/
+
+.screenshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.1em;
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.navbar-brand {
+  padding: 4px 15px 0px 15px;
+}
+
+.navbar-brand > img{
+  width: 85px;
+}
+
+/*-------------------- $TABLES --------------------*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.6em 0;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { background: white; }
+
+tr:hover { background-color: whiteSmoke; }
+
+th {
+  background: #E0DFDE;
+  font-size: 1.3em;
+}
+
+td, th {
+  padding: .75em;
+  border: 1px solid #CCC;
+  text-align: left;
+}
+
+/*-------------------- $SPHINX-OVERRIDES --------------------*/
+
+.warning { overflow: hidden; }
+
+/*-------------------- $MEDIA-QUERIES --------------------*/
+
+@media (min-width: 1200px) {
+  #table-of-contents {
+    width: auto;
+    max-width: 40%;
+  }
+}
+/*---------------------Coloured_text-------------------------*/
+
+.red {
+    color:red;
+}
+.blue {
+    color:blue;
+}
+.green {
+    color:green;
+}
+
+/*-------Introduced here for colors in table cells, for the comparisons of minimizers-----*/
+.ranking-top-1 {
+    background-color: #fef0d9;
+}
+.ranking-top-2 {
+    background-color: #fdcc8a;
+}
+.ranking-med-3 {
+    background-color: #fc8d59;
+}
+.ranking-low-4 {
+    background-color: #e34a33;
+}
+.ranking-low-5 {
+    background-color: #b30000;
+}
