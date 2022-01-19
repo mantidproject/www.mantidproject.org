@@ -18,7 +18,6 @@ version = ''
 # The full version, including alpha/beta/rc tags
 release = ''
 
-
 # -- General configuration ---------------------------------------------------
 
 extensions = []
@@ -43,7 +42,6 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -56,24 +54,37 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
+# yapf: disable
 html_theme_options = {
-    'navbar_title': " ",  # Doesn't accept empty string
-    'navbar_class': "navbar-right", 
+    # Navigation bar title.
+    'navbar_title': " ", # deliberate single space so it's not visible
+    # Tab name for entire site.
+    'navbar_site_name': "Mantid",
+    # Navbar items
     'navbar_links': [
         ("Downloads", "https://download.mantidproject.org/", 1),
         ("Guides", "Documentation"),
         ("Docs", "https://developer.mantidproject.org/", 1),
         ("News", "https://forum.mantidproject.org/c/news/8", 1),
         ("Forums", "https://forum.mantidproject.org/", 1),
-        ("Contact Us", "Contact")
     ],
+    # Do not show the "Show source" button.
+    'source_link_position': "no",
+    # Remove the local TOC from the nav bar
     'navbar_pagenav': False,
-    'source_link_position': None,
+    # Hide the next/previous in the nav bar.
+    'navbar_sidebarrel': True,
+    # Use the latest version.
+    'bootstrap_version': "3",
+    # Ensure the nav bar always stays on top of page.
+    'navbar_fixed_top': "true",
 }
+# yapf: enable
 
 html_static_path = ["_static"]
 
 html_logo = "_static/images/Mantid_Logo_Transparent.png"
+
 
 def setup(app):
     app.add_stylesheet("css/custom.css")
