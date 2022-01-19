@@ -1,8 +1,3 @@
-.. www.mantidproject.org documentation master file, created by
-   sphinx-quickstart on Tue May 25 14:09:03 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 .. toctree::
    :hidden:
    :maxdepth: 2
@@ -16,12 +11,12 @@ Mantid has been created to manipulate and analyse neutron scattering and muon sp
 but could be applied to many other techniques.
 The framework is open source and
 `supported on multiple target platforms (Windows, Linux, Mac). <https://download.mantidproject.org/>`_
-It includes and benefits from `many other open source projects <https://github.com/mantidproject/mantid/blob/master/DEPENDENCY_LICENSES.md>`_
+It includes and benefits from `many other open source projects <https://github.com/mantidproject/mantid/blob/main/DEPENDENCY_LICENSES.md>`_.
 
 Development
 ===========
 
-Mantid is hosted on `GitHub <https://github.com/mantidproject/mantid>`_.
+The Mantid source is hosted on `GitHub <https://github.com/mantidproject/mantid>`_.
 There are pages on `getting started with development <https://developer.mantidproject.org/GettingStarted.html>`_,
 `issue tracking <https://developer.mantidproject.org/IssueTracking.html>`_,
 and more on the development process, tools, testing, etc. on our `developer documentation <https://developer.mantidproject.org/>`_.
@@ -50,7 +45,7 @@ please acknowledge this work by citing:
 - Arnold, O. et al. *Mantid-Data Analysis and Visualization Package for Neutron Scattering and mu-SR Experiments.* Nuclear Instruments
   and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 764 (2014): 156-166
   `doi: 10.1016/j.nima.2014.07.029 <https://doi.org/10.1016/j.nima.2014.07.029>`_
-  (`download bibtex <https://raw.githubusercontent.com/mantidproject/mantid/master/docs/source/mantid.bib>`_)
+  (`download bibtex <https://raw.githubusercontent.com/mantidproject/mantid/main/docs/source/mantid.bib>`_)
 
 To cite a specific release then please find the relevant DOI citation under the
 release notes for that `particular version <https://docs.mantidproject.org/release/>`_.
