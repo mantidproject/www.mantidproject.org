@@ -63,8 +63,7 @@ html_theme_options = {
     # Navbar items
     'navbar_links': [
         ("Downloads", "https://download.mantidproject.org/", 1),
-        ("Guides", "Documentation"),
-        ("Docs", "https://developer.mantidproject.org/", 1),
+        ("Docs", "https://docs.mantidproject.org/", 1),
         ("News", "https://forum.mantidproject.org/c/news/8", 1),
         ("Forums", "https://forum.mantidproject.org/", 1),
     ],
