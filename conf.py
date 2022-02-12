@@ -36,6 +36,6 @@ html_static_path = ["_static"]
 html_css_files = ['css/landing.css']
 
 # Disable sidebars on landing page
-html_sidebars = {
-    'index': ['empty.html', 'empty.html', 'empty.html'],
-}
+# html_sidebars = {
+#     'index': ['empty.html', 'empty.html', 'empty.html'],
+# }

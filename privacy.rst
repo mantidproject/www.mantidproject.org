@@ -1,3 +1,5 @@
+.. _privacy_policy:
+
 Privacy Policy
 ==============
 
@@ -70,7 +72,7 @@ Details of Data Retention
 Usage Data Recorded in Mantid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /images/workbench_startup_window.png
+.. image:: /_static/images/workbench_startup_window.png
    :alt: Image of first-time startup screen in Workbench
    :align: right
    :scale: 30 %

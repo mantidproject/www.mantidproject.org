@@ -133,3 +133,6 @@ _build/
 
 # VSCode
 .vscode/
+
+# Mac finder index
+.DS_Store
