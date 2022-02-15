@@ -1,4 +1,8 @@
 /* Top screen shots */
+#index-top-logo {
+  width: 40%;
+}
+
 .index-top-images {
   display: grid;
   grid-template-columns: 53% 47%;

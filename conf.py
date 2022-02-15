@@ -33,7 +33,7 @@ html_theme = "mantid_sphinx_theme"
 html_static_path = ["_static"]
 
 # Additional css files to include in the pages
-html_css_files = ["css/landing.css"]
+html_css_files = ["css/custom.css"]
 
 # Turn the left bar into news reel
 html_sidebars = {
