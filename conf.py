@@ -33,9 +33,12 @@ html_theme = "mantid_sphinx_theme"
 html_static_path = ["_static"]
 
 # Additional css files to include in the pages
-html_css_files = ['css/landing.css']
+html_css_files = ["css/landing.css"]
 
-# Disable sidebars on landing page
-# html_sidebars = {
-#     'index': ['empty.html', 'empty.html', 'empty.html'],
-# }
+# Turn the left bar into news reel
+html_sidebars = {
+    "index": [
+        "sidebar-news.html",
+        "sidebar-nav-bs.html",
+    ],
+}

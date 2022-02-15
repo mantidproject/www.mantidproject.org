@@ -1,4 +1,10 @@
+/* Top screen shots */
 .index-top-images {
   display: grid;
   grid-template-columns: 53% 47%;
+}
+
+.index-news h5 {
+    font-size: 14px;
+    margin: 1.25rem 0 0.75rem;
 }
