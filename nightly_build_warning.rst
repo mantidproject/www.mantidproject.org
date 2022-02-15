@@ -1,0 +1,5 @@
+.. warning::
+
+   Not recommended for production use.
+   These packages have passed all automated checks but have only had minimal
+   manual testing. Use with caution.

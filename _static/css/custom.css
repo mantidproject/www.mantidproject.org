@@ -12,3 +12,22 @@
     font-size: 14px;
     margin: 1.25rem 0 0.75rem;
 }
+
+.installation-download-buttons {
+  display: flex;
+}
+
+/* Installation download button */
+.button,
+.button:hover
+{
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(var(--pst-color-link),1);
+  color: var(--white);
+  text-align: center;
+  width: 40%;
+  padding: 1.6em 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}

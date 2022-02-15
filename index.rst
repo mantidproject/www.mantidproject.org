@@ -6,6 +6,7 @@
 .. toctree::
    :hidden:
 
+   installation
    privacy
 
 The Mantid project provides tools to support the processing of materials-science
@@ -40,7 +41,7 @@ The tools are:
 Getting Started
 ===============
 
-You can get started by first visiting the `download page <download>`__ where you
+You can get started by first visiting the `installation page <installation>`__ where you
 will find links to various methods of installation. Once installed checkout our
 `user documentation <https://docs.mantidproject.org>`__ for tutorials,
 algorithm documentation and more.
