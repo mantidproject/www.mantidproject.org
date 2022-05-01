@@ -2,51 +2,40 @@ Installation
 ============
 
 Here you can find instructions on how to install Mantid on various platforms.
-We currently offer ``x86_64``
-:ref:`standalone installers <installation_standalone>` bundling all
-components on:
+We currently offer:
 
+- :ref:`full installers <installation_full>` bundling
+  all components (64-bit, Intel)
+- :ref:`Conda packages <installation_conda>` for use with the
+  `conda package manager <https://docs.conda.io/en/latest/>`__ (64-bit, Intel)
 
+Please see the relevant sections for installation instructions.
 
-We also offer ``x86_64`` :ref:`Conda packages <installation_conda>` that offer
-more fine-grained control over installed components.
+.. _installation_full:
 
-Please see the relevant sections below for installation prerequisites
-and instructions.
-
-.. _installation_standalone:
-
-Standalone Workbench Installers
--------------------------------
-
-- RedHat/CentOS 7
-- Ubuntu 18.04
-- Windows 10
-- macOS (High Sierra+)
+Full Installers
+---------------
 
 Latest Release
 ##############
 
-Windows/macOS
-~~~~~~~~~~~~~
-
 .. raw:: html
-   :file: installation_latest_win_mac.html
+   :file: installation_full_latest.html
 
 Linux
 ~~~~~
 
-.. raw:: html
-   :file: installation_latest_linux.html
-
+Starting with version ``6.4`` the above download for Linux can simply be
+extracted and run on any modern Linux (>2010) system.
+Prior and up to versions ``6.4`` ``rpm`` and ``deb`` versions are available for
+Red Hat/CentOS 7 and various versions of Ubuntu: 18.04, 16.04, 14.04.
+See :doc:`linux_packages`.
 
 Nightly Build
 #############
 
 .. include:: ./nightly_build_warning.rst
 
-.. .. raw:: html
-..    :file: download_latest.html
 
 .. _installation_conda:
 

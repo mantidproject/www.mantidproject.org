@@ -38,13 +38,17 @@ The tools are:
 
 - built using `many other open source projects <https://github.com/mantidproject/mantid/blob/main/DEPENDENCY_LICENSES.md>`__.
 
-Getting Started
-===============
+Installation
+============
 
-You can get started by first visiting the `installation page <installation>`__ where you
-will find links to various methods of installation. Once installed checkout our
-`user documentation <https://docs.mantidproject.org>`__ for tutorials,
-algorithm documentation and more.
+You can get started by first visiting the :doc:`installation` page where you
+will find links and documentation on the various methods of installation.
+
+User Guides
+===========
+
+Once installed checkout our `user documentation <https://docs.mantidproject.org>`__
+for tutorials, algorithm documentation and more.
 
 Development
 ===========
@@ -66,7 +70,6 @@ Each group formulates a roadmap for future developments from either a scientific
 or technical perspective.
 For full details of the governance model please see
 `the governance document <https://github.com/mantidproject/governance/blob/main/governance.md#revised-governance-structure-2021---present>`__.
-
 
 Citing Mantid
 =============
