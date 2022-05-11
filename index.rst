@@ -3,11 +3,6 @@
 .. raw:: html
    :file: index_top_images.html
 
-.. toctree::
-   :hidden:
-
-   installation
-   privacy
 
 The Mantid project provides tools to support the processing of materials-science
 data. This data can be gathered from Neutron scattering or Muon spectroscopy
@@ -41,7 +36,7 @@ The tools are:
 Installation
 ============
 
-You can get started by first visiting the :doc:`installation` page where you
+You can get started by first visiting the :doc:`installation/index` page where you
 will find links and documentation on the various methods of installation.
 
 User Guides
