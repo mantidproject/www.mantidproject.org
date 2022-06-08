@@ -5,18 +5,18 @@ import datetime
 import requests
 from typing import List, Mapping
 
-from . import templating
 
 # Constants
-GITHUB_API_ROOT = 'https://api.github.com'
-GITHUB_REPOSITORY = 'mantidproject/mantid'
-GITHUB_TIMESTAMP_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
-LATEST_RELEASE_MARKER_STR = 'latest'
+GITHUB_API_ROOT = "https://api.github.com"
+GITHUB_REPOSITORY = "mantidproject/mantid"
+GITHUB_TIMESTAMP_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
+LATEST_RELEASE_MARKER_STR = "latest"
 
 
 @dataclass
 class Asset:
     """Encapsulate a single downloadable asset"""
+
     name: str
     url: str
 
@@ -24,6 +24,7 @@ class Asset:
 @dataclass
 class ReleaseInfo:
     """Capture information about a single release"""
+
     version: str
     release_date: str
     windows: Asset
@@ -42,14 +43,17 @@ def fetch_release_info(tag_or_latest: str) -> ReleaseInfo:
     if tag_or_latest == LATEST_RELEASE_MARKER_STR:
         endpoint = f"{GITHUB_API_ROOT}/repos/{GITHUB_REPOSITORY}/releases/latest"
     else:
-        endpoint = f"{GITHUB_API_ROOT}/repos/{GITHUB_REPOSITORY}/releases/tags/{tag_or_latest}"
+        endpoint = (
+            f"{GITHUB_API_ROOT}/repos/{GITHUB_REPOSITORY}/releases/tags/{tag_or_latest}"
+        )
 
     response = requests.get(endpoint)
     try:
         response.raise_for_status()
     except IOError as exc:
         raise RuntimeError(
-            f"Error retrieving release information from {endpoint}") from exc
+            f"Error retrieving release information from {endpoint}"
+        ) from exc
 
     return _create_release_info(response.json())
 
@@ -61,12 +65,14 @@ def _create_release_info(response_content: Mapping) -> Mapping:
     was successful and any errors raised before calling this function
     :return: A dictionary of release information
     """
-    version = response_content['tag_name']
-    release_date = _to_pretty_date(response_content['published_at'])
+    version = response_content["tag_name"]
+    release_date = _to_pretty_date(response_content["published_at"])
     assets = response_content["assets"]
-    packages = dict(windows=_find_asset_info(assets, ".exe"),
-                    macos=_find_asset_info(assets, ".dmg"),
-                    linux=_find_asset_info(assets, ".tar.xz"))
+    packages = dict(
+        windows=_find_asset_info(assets, ".exe"),
+        macos=_find_asset_info(assets, ".dmg"),
+        linux=_find_asset_info(assets, ".tar.xz"),
+    )
     # sanity check we have packages
     missing = []
     for os, asset in packages.items():
@@ -74,7 +80,8 @@ def _create_release_info(response_content: Mapping) -> Mapping:
             missing.append(os)
     if len(missing) > 0:
         raise RuntimeError(
-            f"Unable to find required assets for {version}. Missing: {','.join(missing)}"
+            f"Unable to find required assets for {version}. "
+            f"Missing: {','.join(missing)}"
         )
 
     return ReleaseInfo(version=version, release_date=release_date, **packages)
@@ -85,15 +92,17 @@ def _to_pretty_date(timestamp: str) -> str:
     :param timestamp: _description_
     :return: A pretty date string for display to users
     """
-    return datetime.datetime.strptime(
-        timestamp, GITHUB_TIMESTAMP_FORMAT).strftime("%d %B %Y")
+    return datetime.datetime.strptime(timestamp, GITHUB_TIMESTAMP_FORMAT).strftime(
+        "%d %B %Y"
+    )
 
 
 def _find_asset_info(assets: List[Mapping], asset_extension: str) -> Asset:
     """Find an asset whose filename ends with the given extension
     and return an Asset object.
 
-    :param assets: A list of asset descriptions. Each entry is a dictionary describing the asset
+    :param assets: A list of asset descriptions.
+                   Each entry is a dictionary describing the asset
     :return: An asset object describing the asset
     """
     for info in assets:

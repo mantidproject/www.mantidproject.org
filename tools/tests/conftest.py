@@ -9,8 +9,8 @@ from pytest_mock import MockerFixture
 
 @pytest.fixture
 def requests_get_mock(mocker: MockerFixture):
-    requests_get_mock = mocker.patch('tools.releases.requests.get')
-    response_mock = mocker.patch('requests.Response', autospec=True)
+    requests_get_mock = mocker.patch("tools.releases.requests.get")
+    response_mock = mocker.patch("requests.Response", autospec=True)
     requests_get_mock.return_value = response_mock
 
     return requests_get_mock
@@ -24,8 +24,8 @@ def mock_requests_get(mocker: MockerFixture, request_raises_error: bool):
                                  else a .json return value is set
     :return: A mocked out requests.get object
     """
-    requests_get_mock = mocker.patch('tools.releases.requests.get')
-    response_mock = mocker.patch('requests.Response', autospec=True)
+    requests_get_mock = mocker.patch("tools.releases.requests.get")
+    response_mock = mocker.patch("requests.Response", autospec=True)
     if request_raises_error:
         response_mock.raise_for_status.side_effect = IOError("Server error")
     else:
@@ -36,4 +36,4 @@ def mock_requests_get(mocker: MockerFixture, request_raises_error: bool):
 
 
 def _create_release_response_payload():
-    return {'tag_name': 'v6.3.0', 'published_at': '2022-02-08T15:13:30Z'}
+    return {"tag_name": "v6.3.0", "published_at": "2022-02-08T15:13:30Z"}

@@ -3,3 +3,5 @@ requests
 sphinx
 pytest
 pytest-mock
+black
+pre-commit

@@ -5,25 +5,24 @@ import datetime
 
 
 # -- Project information -----------------------------------------------------
-project = 'MantidProject landing page'
+project = "MantidProject landing page"
 copyright = (
     f"2007-{datetime.datetime.now().year} ISIS Rutherford Appleton Laboratory UKRI, "
     "NScD Oak Ridge National Laboratory, European Spallation Source, "
-    "Institut Laue - Langevin & CSNS, Institute of High Energy Physics, CAS")
+    "Institut Laue - Langevin & CSNS, Institute of High Energy Physics, CAS"
+)
 
 # -- General configuration ---------------------------------------------------
 
-extensions = ['mantid_sphinx_theme']
+extensions = ["mantid_sphinx_theme"]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [
-    "_build", "Thumbs.db", ".DS_Store", "nightly_build_warning.rst"
-]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "nightly_build_warning.rst"]
 
 # -- Options for HTML output -------------------------------------------------
 
