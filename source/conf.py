@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
 # Configuration file for the Sphinx documentation builder.
-
 import datetime
-import mantid_sphinx_theme  # noqa: F401
+
 
 # -- Project information -----------------------------------------------------
 project = 'MantidProject landing page'
@@ -14,7 +13,7 @@ copyright = (
 
 # -- General configuration ---------------------------------------------------
 
-extensions = []
+extensions = ['mantid_sphinx_theme']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
