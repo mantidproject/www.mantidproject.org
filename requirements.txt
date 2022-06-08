@@ -1,2 +1,5 @@
-# Requirements for building the website
-mantid-sphinx-theme
+mantid-sphinx-theme @ https://github.com/martyngigg/mantid-sphinx-theme/archive/6db823efb24f2615d73576de96b56723f7898cf4.zip
+requests
+sphinx
+pytest
+pytest-mock
