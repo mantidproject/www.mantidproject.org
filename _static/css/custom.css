@@ -9,8 +9,8 @@
 }
 
 .index-news h5 {
-    font-size: 14px;
-    margin: 1.25rem 0 0.75rem;
+  font-size: 14px;
+  margin: 1.25rem 0 0.75rem;
 }
 
 .installation-download-buttons {
@@ -19,11 +19,10 @@
 
 /* Installation download button */
 .button,
-.button:hover
-{
+.button:hover {
   display: block;
   margin: 0 auto;
-  background-color: rgba(var(--pst-color-link),1);
+  background-color: var(--pst-color-link);
   color: var(--white);
   text-align: center;
   width: 40%;
