@@ -28,7 +28,7 @@ Instructions:
 
 - :doc:`Windows <windows>`
 - :doc:`macOS <macos>`
-- :doc:`Linux <linux>`: Starting with version ``6.4`` the above `.xz` file for Linux can
+- :doc:`Linux <linux>`: Starting with version ``6.4`` the above `.tar.xz` file for Linux can
   simply be extracted and run on any modern Linux (>2010) system.
   Prior and up to versions ``6.4``, ``rpm`` and ``deb`` versions are available for
   Red Hat/CentOS 7 and various versions of Ubuntu: 18.04, 16.04, 14.04.
