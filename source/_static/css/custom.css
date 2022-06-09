@@ -22,7 +22,7 @@
 .button:hover {
   display: block;
   margin: 0 auto;
-  background-color: rgba(var(--pst-color-link), 1);
+  background-color: var(--pst-color-link);
   color: var(--white);
   text-align: center;
   width: 40%;
