@@ -1,4 +1,4 @@
-mantid-sphinx-theme @ https://github.com/martyngigg/mantid-sphinx-theme/archive/d55ab9f196c8a73254403a34b807bc3f79c9418f.zip
+mantid-sphinx-theme @ https://github.com/martyngigg/mantid-sphinx-theme/archive/eef20dd47226297394374164d5602b32fc09c61e.zip
 requests
 sphinx
 pytest
