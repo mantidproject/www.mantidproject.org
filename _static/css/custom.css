@@ -5,7 +5,7 @@
 
 .index-top-images {
   display: grid;
-  grid-template-columns: 53% 47%;
+  grid-template-columns: 40% 60%;
 }
 
 .index-news h5 {
