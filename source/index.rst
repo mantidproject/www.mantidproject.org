@@ -35,8 +35,8 @@ The tools are:
 
 - built using `many other open source projects <https://github.com/mantidproject/mantid/blob/main/DEPENDENCY_LICENSES.md>`__.
 
-Installation
-============
+Download & Installation
+=======================
 
 You can get started by visiting the :doc:`installation/index` page where you
 will find links for download and documentation on the various methods of
