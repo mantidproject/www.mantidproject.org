@@ -40,7 +40,7 @@ html_theme_options = {"show_prev_next": False}
 
 # Turn the left bar into news reel
 html_sidebars = {
-    "index": [
+    "**": [
         "sidebar-news.html",
         "sidebar-nav-bs.html",
     ],
