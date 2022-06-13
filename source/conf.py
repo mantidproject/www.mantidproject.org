@@ -36,7 +36,9 @@ html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
 
 # Next/previous don't really appy here
-html_theme_options = {"show_prev_next": False}
+html_theme_options = {
+    "show_prev_next": False,
+}
 
 # Turn the left bar into news reel
 html_sidebars = {
