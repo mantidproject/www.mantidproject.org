@@ -1,0 +1,32 @@
+/* Top screen shots */
+#index-top-logo {
+  width: 40%;
+}
+
+.index-top-images {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.index-news h5 {
+  font-size: 14px;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.installation-download-buttons {
+  display: flex;
+}
+
+/* Installation download button */
+.button,
+.button:hover {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--pst-color-link);
+  color: var(--white);
+  text-align: center;
+  width: 40%;
+  padding: 1.6em 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
