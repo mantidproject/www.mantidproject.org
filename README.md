@@ -1,6 +1,8 @@
 # Mantid Project Website
 
-This repository holds the source for the main project website for the mantidproject.
+This repository holds the source for the www subdomain for the mantidproject.
+For other sites see the corresponding GitHub repository - each is named after
+the subdomain.
 
 ## Build Instructions
 
@@ -38,7 +40,7 @@ pip install -r requirements.txt
 
 Build the site with `make`:
 
-```
+```sh
 make html
 ```
 
