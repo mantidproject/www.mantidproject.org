@@ -58,3 +58,11 @@ python -m http.server --directory=_build/html
 ```
 
 Vist the url given by the server when it starts.
+
+## Adding a new item
+
+The new sidebar is defined in `source/_templates/sidebar-news.html`.
+While the path says template it is just plain html.
+To add a new item copy one of the `<div class="index-news-item">` blocks
+and add it at the top.
+Once copied update the item title, href and descriptive text.
