@@ -1,4 +1,4 @@
-# Mantid Project Website
+# Mantid Project Landing Page
 
 This repository holds the source for the www subdomain for the mantidproject.
 For other sites see the corresponding GitHub repository - each is named after
