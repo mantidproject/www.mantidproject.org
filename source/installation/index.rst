@@ -79,3 +79,23 @@ to the channel:
 .. code-block:: sh
 
    conda install -c mantid/label/nightly mantid
+
+Sample Data
+-----------
+
+Below we provide links to various sets of sample data for use with Mantid:
+
+- `Usage Examples <https://sourceforge.net/projects/mantid/files/Sample%20Data/UsageData.zip/download>`__:
+  Data used within the usage sections of the mantid documentation pages
+
+- `ISIS <https://sourceforge.net/projects/mantid/files/Sample%20Data/SampleData-ISIS.zip/download>`__:
+  A sample of ISIS data files.
+
+- `ORNL <https://sourceforge.net/projects/mantid/files/Sample%20Data/SampleData-ORNL.zip/download>`__:
+  A sample of SNS & HFIR data files.
+
+- `Muon <https://sourceforge.net/projects/mantid/files/Sample%20Data/SampleData-Muon.zip/download>`__:
+  A sample of Muon files.
+
+- `Training Course Data <https://sourceforge.net/projects/mantid/files/Sample%20Data/TrainingCourseData.zip/download>`__:
+  Data used for the `mantid training courses <https://docs.mantidproject.org/nightly/tutorials/index.html#training>`__.
