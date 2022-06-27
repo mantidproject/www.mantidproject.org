@@ -35,6 +35,11 @@ html_static_path = ["_static"]
 # Additional css files to include in the pages
 html_css_files = ["css/custom.css"]
 
+# Context to pass to all page builds
+html_context = {
+    "default_mode": "light",
+}
+
 # Next/previous don't really appy here
 html_theme_options = {
     "show_prev_next": False,
