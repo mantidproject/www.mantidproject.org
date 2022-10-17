@@ -4,6 +4,12 @@ This repository holds the source for the www subdomain for the mantidproject.
 For other sites see the corresponding GitHub repository - each is named after
 the subdomain.
 
+Contents:
+
+- [Build Instructions](#build-instructions)
+- [Updating the latest release links](#updating-the-latest-release-links)
+- [Adding a news item](#adding-a-news-item)
+
 ## Build Instructions
 
 ### Set up Python
@@ -59,7 +65,28 @@ python -m http.server --directory=_build/html
 
 Vist the url given by the server when it starts.
 
-## Adding a new item
+## Updating the latest release links
+
+The links on the installation page must be updated whenever a new
+release of mantid is published. The update is best done using the
+`generate_release_html.py` script that will fetch the latest
+verion number from the [mantid releases list]() automatically.
+The update can be done by hand if necessary by editing the
+`source/_templates/installation-latest.html` template.
+
+To use the script, follow the instructions above to create an environment
+that is able to build the pages. Once the site is built run
+
+```sh
+python generate_release_html.py
+```
+
+then build the pages and view the updates.
+Commit the result and push the updated versions to republish the updated
+pages.
+
+
+## Adding a news item
 
 The new sidebar is defined in `source/_templates/sidebar-news.html`.
 While the path says template it is just plain html.
