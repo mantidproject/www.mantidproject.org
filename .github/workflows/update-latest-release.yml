@@ -31,4 +31,4 @@ jobs:
         with:
           commit_message: Updating installation links to latest release
           commit_options: '--no-verify'
-          file_pattern: 'source/_templates/*.html'
+          file_pattern: 'source/installation/*.html'
