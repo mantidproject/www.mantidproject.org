@@ -3,7 +3,7 @@
 # mantidproject/mantid/releases.
 #
 # This workflow is intended to be triggered manually
-name: Deploy to GitHub Pages
+name: Update latest release links
 on:
   workflow_dispatch:
 
