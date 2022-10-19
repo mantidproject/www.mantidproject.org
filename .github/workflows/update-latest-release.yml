@@ -1,0 +1,34 @@
+# Update the latest release links on the installation pages.
+# The script automatically pulls the latest version number from
+# mantidproject/mantid/releases.
+#
+# This workflow is intended to be triggered manually
+name: Deploy to GitHub Pages
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Create new release links
+        run: |
+          pip install -r requirements-html-gen.txt
+          python ./generate_release_html.py
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Updating installation links to latest release
+          commit_options: '--no-verify'
+          file_pattern: 'source/_templates/*.html'
