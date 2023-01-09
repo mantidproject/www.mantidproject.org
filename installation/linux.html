@@ -35,9 +35,6 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'installation/linux';</script>
@@ -125,7 +122,7 @@
     <a class="reference internal nav-link" href="https://forum.mantidproject.org/">Forums</a>
   </li>
   <li class="nav-item">
-    <a class="reference internal nav-link" href="https://mantidproject.org/contact">Contact Us</a>
+    <a class="reference internal nav-link" href="https://www.mantidproject.org/contact">Contact Us</a>
   </li>
 </ul>
       </div>
@@ -216,7 +213,7 @@
     <a class="reference internal nav-link" href="https://forum.mantidproject.org/">Forums</a>
   </li>
   <li class="nav-item">
-    <a class="reference internal nav-link" href="https://mantidproject.org/contact">Contact Us</a>
+    <a class="reference internal nav-link" href="https://www.mantidproject.org/contact">Contact Us</a>
   </li>
 </ul>
       </div>
@@ -356,11 +353,11 @@ downloading the appropriate repository configuration file and saving it to <code
 <section id="id1">
 <h3>Setup<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>Enable the <code class="docutils literal notranslate"><span class="pre">mantid</span></code> prerequisites PPA:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt-add-repository ppa:mantid/mantid
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-add-repository<span class="w"> </span>ppa:mantid/mantid
 </pre></div>
 </div>
 <p>Add the <code class="docutils literal notranslate"><span class="pre">mantid</span></code> signing key to your key chain:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>wget -O - http://apt.isis.rl.ac.uk/2E10C193726B7213.asc <span class="p">|</span> sudo apt-key add -
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>-O<span class="w"> </span>-<span class="w"> </span>http://apt.isis.rl.ac.uk/2E10C193726B7213.asc<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>apt-key<span class="w"> </span>add<span class="w"> </span>-
 </pre></div>
 </div>
 <p>Activate the apt repository for the version of Mantid you require by running:</p>
@@ -369,7 +366,7 @@ downloading the appropriate repository configuration file and saving it to <code
 <li><p>nightly build: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-add-repository</span> <span class="pre">&quot;deb</span> <span class="pre">[arch=amd64]</span> <span class="pre">http://apt.isis.rl.ac.uk</span> <span class="pre">$(lsb_release</span> <span class="pre">-c</span> <span class="pre">|</span> <span class="pre">cut</span> <span class="pre">-f</span> <span class="pre">2)-testing</span> <span class="pre">main&quot;</span></code></p></li>
 </ul>
 <p>and force an apt update:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt-get update
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
 </pre></div>
 </div>
 </section>
@@ -504,7 +501,7 @@ downloading the appropriate repository configuration file and saving it to <code
     
 <p class="copyright">
 
-    &copy; Copyright 2007-2022 ISIS Rutherford Appleton Laboratory UKRI, NScD Oak Ridge National Laboratory, European Spallation Source, Institut Laue - Langevin &amp; CSNS, Institute of High Energy Physics, CAS.<br>
+    &copy; Copyright 2007-2023 ISIS Rutherford Appleton Laboratory UKRI, NScD Oak Ridge National Laboratory, European Spallation Source, Institut Laue - Langevin &amp; CSNS, Institute of High Energy Physics, CAS.<br>
 
 </p>
 
@@ -523,7 +520,7 @@ downloading the appropriate repository configuration file and saving it to <code
   <div class="footer-item">
     
 <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.1.2.<br>
 </p>
 
   </div>
