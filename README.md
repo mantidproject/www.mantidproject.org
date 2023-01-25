@@ -38,7 +38,7 @@ mamba activate $PWD/condaenv
 
 ### Build
 
-Clone this www repository. Then, in the root directory of this repository, 
+Clone this www repository. Then, in the root directory of this repository,
 install the dependencies:
 
 ```sh
