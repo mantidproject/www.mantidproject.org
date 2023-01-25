@@ -36,11 +36,12 @@ Instructions:
 Nightly Build
 #############
 
+Go to our `releases page on Github <https://github.com/mantidproject/mantid/releases>`__,
+find the latest nightly and download the relevant package.
+
 .. include:: ./nightly_build_warning.txt
 
-Our nightly builds are hosted on GitHub.
-Please visit our `releases <https://github.com/mantidproject/mantid/releases>`__
-page, find the latest nightly and download the relevant package.
+----
 
 .. _installation_conda:
 
