@@ -42,6 +42,7 @@ html_context = {
 
 # Next/previous don't really appy here
 html_theme_options = {
+    "show_toc_level": 2,
     "show_prev_next": False,
 }
 
