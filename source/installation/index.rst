@@ -81,6 +81,8 @@ to the channel:
 
    conda install -c mantid/label/nightly mantid
 
+----
+
 Sample Data
 -----------
 
