@@ -38,7 +38,8 @@ mamba activate $PWD/condaenv
 
 ### Build
 
-In the root directory of the project install the dependencies:
+Clone this www repository. Then, in the root directory of this repository,
+install the dependencies:
 
 ```sh
 pip install -r requirements.txt
