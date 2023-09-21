@@ -62,12 +62,15 @@ channel on Anaconda.org. The available packages are:
 Latest Release
 ##############
 
-To install any of the packages simply use the `-c` option in Conda to add the
-mantid channel and then the package name:
+To install Mantid into a new Conda environment use these options
+- `-n` to specify the name of your new environment
+- `-c` to add the 'mantid' Conda channel
+
+followed by the package name:
 
 .. code-block:: sh
 
-   conda install -c mantid mantid
+   conda install -n mantid_env -c mantid mantid
 
 Nightly Build
 #############
@@ -79,7 +82,7 @@ to the channel:
 
 .. code-block:: sh
 
-   conda install -c mantid/label/nightly mantid
+   conda install -n mantid_env -c mantid/label/nightly mantid
 
 ----
 
