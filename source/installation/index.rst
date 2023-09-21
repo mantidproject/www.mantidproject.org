@@ -70,7 +70,7 @@ followed by the package name:
 
 .. code-block:: sh
 
-   conda install -n mantid_env -c mantid mantid
+   conda create -n mantid_env -c mantid mantid
 
 Nightly Build
 #############
@@ -82,9 +82,25 @@ to the channel:
 
 .. code-block:: sh
 
-   conda install -n mantid_env -c mantid/label/nightly mantid
+   conda create -n mantid_env -c mantid/label/nightly mantid
 
 ----
+
+Open Mantid from Conda
+######################
+
+To open Mantid from a Conda environment, you must first activate your
+Conda environment:
+
+.. code-block:: sh
+
+   conda activate mantid_env
+
+Then you can open Mantid with the following command:
+
+.. code-block:: sh
+
+   workbench
 
 Sample Data
 -----------
