@@ -59,18 +59,28 @@ channel on Anaconda.org. The available packages are:
 - ``mantidworkbench``: General-purpose graphical-user-interface for plotting,
   writing scripts etc.
 
+It is worth noting that versions of Mantid after v6.7 (including the nightly) use
+Python 3.10. Mantid v6.7 and before use Python 3.8.
+
 Latest Release
 ##############
 
-To install Mantid into a new Conda environment use these options
+To install Mantid into a new Conda environment use these options:
 - `-n` to specify the name of your new environment
 - `-c` to add the 'mantid' Conda channel
 
-followed by the package name:
+These options should be followed by the name of the package you want
+to install. This will probably be either the ``mantid`` python library
 
 .. code-block:: sh
 
    conda create -n mantid_env -c mantid mantid
+
+or the ``mantidworkbench`` package containing the graphical-user-interface
+
+.. code-block:: sh
+
+   conda create -n mantid_env -c mantid mantidworkbench
 
 Nightly Build
 #############
@@ -82,15 +92,15 @@ to the channel:
 
 .. code-block:: sh
 
-   conda create -n mantid_env -c mantid/label/nightly mantid
+   conda create -n mantid_env -c mantid/label/nightly mantidworkbench
 
 ----
 
-Open Mantid from Conda
-######################
+How to Open Mantid Workbench (Conda)
+####################################
 
-To open Mantid from a Conda environment, you must first activate your
-Conda environment:
+To open the Mantid Workbench provided in the ``mantidworkbench`` Conda package,
+you must first activate your Conda environment:
 
 .. code-block:: sh
 
