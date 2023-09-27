@@ -18,27 +18,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/style.css?v=468c6cff" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=53ea2c89" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/documentation_options.js?v=8a448e45"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'installation/index';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -53,6 +54,15 @@
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -93,7 +103,8 @@
     <span class="fa-solid fa-bars"></span>
   </label>
   
-  <div class="navbar-header-items__start">
+  
+  <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
 
@@ -111,7 +122,6 @@
 </a></div>
     
   </div>
-  
   
   <div class="col-lg-9 navbar-header-items">
     
@@ -148,23 +158,25 @@
       
         <div class="navbar-item navbar-persistent--container">
           
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
         </div>
       
       
         <div class="navbar-item">
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -184,18 +196,20 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
       <span class="fa-solid fa-outdent"></span>
     </label>
   
@@ -248,10 +262,10 @@ document.write(`
           <div class="navbar-item">
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -343,8 +357,8 @@ document.write(`
 
 
 
-<nav aria-label="Breadcrumbs">
-  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../index.html" class="nav-link" aria-label="Home">
@@ -369,7 +383,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h1>
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
 <p>Here you can find instructions on how to install Mantid on various platforms.
 We currently offer:</p>
 <ul class="simple">
@@ -380,9 +394,9 @@ all components (64-bit, Intel)</p></li>
 </ul>
 <p>Please see the relevant sections for installation instructions.</p>
 <section id="full-installers">
-<span id="installation-full"></span><h2>Full Installers<a class="headerlink" href="#full-installers" title="Permalink to this heading">#</a></h2>
+<span id="installation-full"></span><h2>Full Installers<a class="headerlink" href="#full-installers" title="Link to this heading">#</a></h2>
 <section id="latest-release">
-<h3>Latest Release<a class="headerlink" href="#latest-release" title="Permalink to this heading">#</a></h3>
+<h3>Latest Release<a class="headerlink" href="#latest-release" title="Link to this heading">#</a></h3>
 <!-- This file is generated from the installation-latest.html template -->
 <p>Version: <strong>v6.7.0</strong></p>
 <p>Release Date: <strong>27 June 2023</strong></p>
@@ -407,7 +421,7 @@ Red Hat/CentOS 7 and various versions of Ubuntu: 18.04, 16.04, 14.04.</p></li>
 </ul>
 </section>
 <section id="nightly-build">
-<h3>Nightly Build<a class="headerlink" href="#nightly-build" title="Permalink to this heading">#</a></h3>
+<h3>Nightly Build<a class="headerlink" href="#nightly-build" title="Link to this heading">#</a></h3>
 <p>Go to our <a class="reference external" href="https://github.com/mantidproject/mantid/releases">releases page on Github</a>,
 find the latest nightly and download the relevant package.</p>
 <div class="admonition warning">
@@ -420,7 +434,7 @@ manual testing. Use with caution.</p>
 </section>
 </section>
 <section id="conda">
-<span id="installation-conda"></span><h2>Conda<a class="headerlink" href="#conda" title="Permalink to this heading">#</a></h2>
+<span id="installation-conda"></span><h2>Conda<a class="headerlink" href="#conda" title="Link to this heading">#</a></h2>
 <p>Our packages are available through our <a class="reference external" href="https://anaconda.org/mantid">mantid</a>
 channel on Anaconda.org. The available packages are:</p>
 <ul class="simple">
@@ -430,16 +444,27 @@ instrument viewer, slice viewer for use in other applications.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">mantidworkbench</span></code>: General-purpose graphical-user-interface for plotting,
 writing scripts etc.</p></li>
 </ul>
+<p>It is worth noting that versions of Mantid after v6.7 (including the nightly) use
+Python 3.10. Mantid v6.7 and before use Python 3.8.</p>
 <section id="id1">
-<h3>Latest Release<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<p>To install any of the packages simply use the <cite>-c</cite> option in Conda to add the
-mantid channel and then the package name:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantid
+<h3>Latest Release<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>To install Mantid into a new Conda environment use these options:</p>
+<ul class="simple">
+<li><p><cite>-n</cite> to specify the name of your new environment</p></li>
+<li><p><cite>-c</cite> to add the ‘mantid’ Conda channel</p></li>
+</ul>
+<p>These options should be followed by the name of the package you want
+to install. This will probably be either the <code class="docutils literal notranslate"><span class="pre">mantid</span></code> python library</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantid
+</pre></div>
+</div>
+<p>or the <code class="docutils literal notranslate"><span class="pre">mantidworkbench</span></code> package containing the graphical-user-interface</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantidworkbench
 </pre></div>
 </div>
 </section>
 <section id="id2">
-<h3>Nightly Build<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<h3>Nightly Build<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Nightly version NOT recommended for production use.
@@ -448,14 +473,26 @@ manual testing. Use with caution.</p>
 </div>
 <p>If you wish to use a nightly build then add the <code class="docutils literal notranslate"><span class="pre">nightly</span></code> label
 to the channel:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>mantid/label/nightly<span class="w"> </span>mantid
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid/label/nightly<span class="w"> </span>mantidworkbench
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="how-to-open-mantid-workbench-conda">
+<h3>How to Open Mantid Workbench (Conda)<a class="headerlink" href="#how-to-open-mantid-workbench-conda" title="Link to this heading">#</a></h3>
+<p>To open the Mantid Workbench provided in the <code class="docutils literal notranslate"><span class="pre">mantidworkbench</span></code> Conda package,
+you must first activate your Conda environment:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>mantid_env
+</pre></div>
+</div>
+<p>Then you can open Mantid with the following command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>workbench
 </pre></div>
 </div>
 </section>
 </section>
-<hr class="docutils" />
 <section id="sample-data">
-<h2>Sample Data<a class="headerlink" href="#sample-data" title="Permalink to this heading">#</a></h2>
+<h2>Sample Data<a class="headerlink" href="#sample-data" title="Link to this heading">#</a></h2>
 <p>Below we provide links to various sets of sample data for use with Mantid:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://sourceforge.net/projects/mantid/files/Sample%20Data/UsageData.zip/download">Usage Examples</a>:
@@ -474,6 +511,8 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
 
 
                 </article>
+              
+              
               
               
               
@@ -497,6 +536,7 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Latest Release</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Nightly Build</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-open-mantid-workbench-conda">How to Open Mantid Workbench (Conda)</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-data">Sample Data</a></li>
@@ -524,8 +564,8 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -543,7 +583,7 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
       
         <div class="footer-item">
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     <br/>
   </p>
 </div>
@@ -551,10 +591,11 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
     </div>
   
   
+  
     <div class="footer-items__end">
       
         <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.1.
 </p></div>
       
     </div>
