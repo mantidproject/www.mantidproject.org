@@ -66,6 +66,7 @@ Latest Release
 ##############
 
 To install Mantid into a new Conda environment use these options:
+
 - `-n` to specify the name of your new environment
 - `-c` to add the 'mantid' Conda channel
 
