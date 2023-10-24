@@ -75,15 +75,17 @@ Citing Mantid
 If Mantid contributes to a project that leads to a scientific publication,
 please acknowledge this work by citing:
 
-- *Mantid (2013): Manipulation and Analysis Toolkit for Instrument Data.; Mantid Project.* http://dx.doi.org/10.5286/SOFTWARE/MANTID
+- *Mantid (2013): Manipulation and Analysis Toolkit for Instrument Data.; Mantid Project.* http://dx.doi.org/10.5286/SOFTWARE/MANTID#.#
+  replacing #.# with the Mantid version number. This version number is printed on startup of production ready releases of Mantid and in
+  the `release notes <https://docs.mantidproject.org/release/>`__. If a non-production ready version of Mantid is used (not recommended)
+  then please cite the corresponding production ready version, plus add comment to aid identifing which nightly or other non-production
+  ready version was used. Note, the reason for adding Mantid version number is to help with provenance of your scientific work, for example,
+  in 10 years time after your publication to make it that little bit easier for someone else to reproduce your scientific results.
 
 - Arnold, O. et al. *Mantid-Data Analysis and Visualization Package for Neutron Scattering and mu-SR Experiments.* Nuclear Instruments
   and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 764 (2014): 156-166
   `doi: 10.1016/j.nima.2014.07.029 <https://doi.org/10.1016/j.nima.2014.07.029>`__
   (`download bibtex <https://raw.githubusercontent.com/mantidproject/mantid/main/docs/source/mantid.bib>`__)
-
-To cite a specific release then please find the relevant DOI citation under the
-release notes for that `particular version <https://docs.mantidproject.org/release/>`__.
 
 Privacy Policy
 ==============
