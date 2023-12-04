@@ -11,7 +11,7 @@ General Scope
 This policy covers personally identifiable information collected or stored by the Mantid
 project on its servers in relation to the Project and its community.
 Consistent with the UK Data Protection Policy, the project collects and retains
-the least amount of personally identifiable information needed to fulfill the Projects
+the least amount of personally identifiable information needed to fulfil the Projects
 operational needs.
 
 The Public and Collaborative Nature of the Projects
@@ -149,20 +149,20 @@ If usage reporting is disabled (see :ref:`usage_data_recorded_in_mantid`),
 then nothing will be collected.
 If usage data is being recorded, then upon error detection a pop-up
 window will ask for permission to collect additional information.
-There are three options for reporting, the information collected; each case is
-detailed below.
+There are two options given to the user by this window:
 
 Yes, share information
 ^^^^^^^^^^^^^^^^^^^^^^
 
-In this case, we will collect information that
-allows us to identify who has had the error; we may
-contact you directly to see if we can help with the
-problem. We will collect:
+In this case, we will collect all the information we need relevant to the error,
+including that which allows us to identify who has had the error; we may
+contact you directly to see if we can help with the problem 
+or to inform you that the problem has been solved.
+We will collect:
 
 - The fact that an error occurred
 - Username (optional)
-- Email (optional)
+- Email
 - Exit error code
 - Operating system
 - Mantid uptime (how long has the current instance been running)
@@ -177,33 +177,10 @@ problem. We will collect:
   which just crashed as well as any other open
   Mantid sessions)
 
-Share non-identifiable information
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In this case, we will collect only information that
-cannot be traced back to the specific user. There
-is still a lot of information that is useful to us
-here. **Note** hashing is a one-way function that
-encrypts the arbitrary length ID to a fixed length
-string; this operation cannot be reversed.
-
-- The fact that an error occurred
-- Exit error code
-- Operating system
-- Mantid uptime (how long has the current instance been running)
-- Default facility
-- Default instrument
-- Text in the free text box
-- Hashed user ID
-- Hashed host ID
-
 Don't share any information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this case we will only report back that Mantid
-has encountered an error, nothing else.
-
--  The fact that an error occurred
+In this case no report will be sent back to us.
 
 Recalling Information
 ---------------------
@@ -211,6 +188,12 @@ Recalling Information
 As these records are potentially identifiable, we will remove any records
 for a particular user, on request. This can be requested by contacting the
 Mantid team using ``mantid-help@mantidproject.org``.
+
+Expiry of identifiable information
+------------------------------------
+
+Identifiable information such as a user's name or email will be deleted one year
+after collection.
 
 Disclaimer
 ----------
