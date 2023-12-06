@@ -156,7 +156,7 @@ Yes, share information
 
 In this case, we will collect all the information we need relevant to the error,
 including that which allows us to identify who has had the error; we may
-contact you directly to see if we can help with the problem 
+contact you directly to see if we can help with the problem
 or to inform you that the problem has been solved.
 We will collect:
 
