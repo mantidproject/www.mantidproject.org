@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-theme="light">
+<html lang="en" data-content_root="./" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -33,9 +33,9 @@
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=53ea2c89" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script src="_static/documentation_options.js?v=5929fcd5"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
@@ -158,6 +158,7 @@
       
         <div class="navbar-item navbar-persistent--container">
           
+
  <script>
  document.write(`
    <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -171,6 +172,7 @@
       
       
         <div class="navbar-item">
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -196,6 +198,7 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
+
  <script>
  document.write(`
    <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -260,6 +263,7 @@ document.write(`
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -380,7 +384,7 @@ document.write(`
 <p>This policy covers personally identifiable information collected or stored by the Mantid
 project on its servers in relation to the Project and its community.
 Consistent with the UK Data Protection Policy, the project collects and retains
-the least amount of personally identifiable information needed to fulfill the Projects
+the least amount of personally identifiable information needed to fulfil the Projects
 operational needs.</p>
 </section>
 <section id="the-public-and-collaborative-nature-of-the-projects">
@@ -499,18 +503,18 @@ If usage reporting is disabled (see <a class="reference internal" href="#usage-d
 then nothing will be collected.
 If usage data is being recorded, then upon error detection a pop-up
 window will ask for permission to collect additional information.
-There are three options for reporting, the information collected; each case is
-detailed below.</p>
+There are two options given to the user by this window:</p>
 <section id="yes-share-information">
 <h5>Yes, share information<a class="headerlink" href="#yes-share-information" title="Link to this heading">#</a></h5>
-<p>In this case, we will collect information that
-allows us to identify who has had the error; we may
-contact you directly to see if we can help with the
-problem. We will collect:</p>
+<p>In this case, we will collect all the information we need relevant to the error,
+including that which allows us to identify who has had the error; we may
+contact you directly to see if we can help with the problem
+or to inform you that the problem has been solved.
+We will collect:</p>
 <ul class="simple">
 <li><p>The fact that an error occurred</p></li>
 <li><p>Username (optional)</p></li>
-<li><p>Email (optional)</p></li>
+<li><p>Email</p></li>
 <li><p>Exit error code</p></li>
 <li><p>Operating system</p></li>
 <li><p>Mantid uptime (how long has the current instance been running)</p></li>
@@ -526,33 +530,9 @@ which just crashed as well as any other open
 Mantid sessions)</p></li>
 </ul>
 </section>
-<section id="share-non-identifiable-information">
-<h5>Share non-identifiable information<a class="headerlink" href="#share-non-identifiable-information" title="Link to this heading">#</a></h5>
-<p>In this case, we will collect only information that
-cannot be traced back to the specific user. There
-is still a lot of information that is useful to us
-here. <strong>Note</strong> hashing is a one-way function that
-encrypts the arbitrary length ID to a fixed length
-string; this operation cannot be reversed.</p>
-<ul class="simple">
-<li><p>The fact that an error occurred</p></li>
-<li><p>Exit error code</p></li>
-<li><p>Operating system</p></li>
-<li><p>Mantid uptime (how long has the current instance been running)</p></li>
-<li><p>Default facility</p></li>
-<li><p>Default instrument</p></li>
-<li><p>Text in the free text box</p></li>
-<li><p>Hashed user ID</p></li>
-<li><p>Hashed host ID</p></li>
-</ul>
-</section>
 <section id="don-t-share-any-information">
 <h5>Don’t share any information<a class="headerlink" href="#don-t-share-any-information" title="Link to this heading">#</a></h5>
-<p>In this case we will only report back that Mantid
-has encountered an error, nothing else.</p>
-<ul class="simple">
-<li><p>The fact that an error occurred</p></li>
-</ul>
+<p>In this case no report will be sent back to us.</p>
 </section>
 </section>
 </section>
@@ -562,6 +542,11 @@ has encountered an error, nothing else.</p>
 <p>As these records are potentially identifiable, we will remove any records
 for a particular user, on request. This can be requested by contacting the
 Mantid team using <code class="docutils literal notranslate"><span class="pre">mantid-help&#64;mantidproject.org</span></code>.</p>
+</section>
+<section id="expiry-of-identifiable-information">
+<h2>Expiry of identifiable information<a class="headerlink" href="#expiry-of-identifiable-information" title="Link to this heading">#</a></h2>
+<p>Identifiable information such as a user’s name or email will be deleted one year
+after collection.</p>
 </section>
 <section id="disclaimer">
 <h2>Disclaimer<a class="headerlink" href="#disclaimer" title="Link to this heading">#</a></h2>
@@ -594,6 +579,7 @@ to information provided in the course of participating in the Mantid project.</p
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
@@ -609,7 +595,6 @@ to information provided in the course of participating in the Mantid project.</p
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-usage">Feature Usage</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-report-data-recorded-in-mantid">Error Report Data Recorded in Mantid</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#yes-share-information">Yes, share information</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#share-non-identifiable-information">Share non-identifiable information</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#don-t-share-any-information">Don’t share any information</a></li>
 </ul>
 </li>
@@ -618,11 +603,13 @@ to information provided in the course of participating in the Mantid project.</p
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recalling-information">Recalling Information</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expiry-of-identifiable-information">Expiry of identifiable information</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disclaimer">Disclaimer</a></li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
+
   <div class="tocsection sourcelink">
     <a href="_sources/privacy.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
@@ -643,8 +630,8 @@ to information provided in the course of participating in the Mantid project.</p
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -652,6 +639,7 @@ to information provided in the course of participating in the Mantid project.</p
     <div class="footer-items__start">
       
         <div class="footer-item">
+
   <p class="copyright">
     
       © Copyright 2007-2023 ISIS Rutherford Appleton Laboratory UKRI, NScD Oak Ridge National Laboratory, European Spallation Source, Institut Laue - Langevin &amp; CSNS, Institute of High Energy Physics, CAS.
@@ -661,6 +649,7 @@ to information provided in the course of participating in the Mantid project.</p
 </div>
       
         <div class="footer-item">
+
   <p class="sphinx-version">
     Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     <br/>
@@ -673,8 +662,9 @@ to information provided in the course of participating in the Mantid project.</p
   
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.3.
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
 </p></div>
       
     </div>
