@@ -1,5 +1,6 @@
 """Utilities helping with the documentation build
 """
+
 from dataclasses import dataclass
 import datetime
 import requests

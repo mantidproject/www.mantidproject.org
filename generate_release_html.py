@@ -1,5 +1,6 @@
 """Generate the latest.html release information in installation
 """
+
 from pathlib import Path
 
 from tools.releases import fetch_release_info
