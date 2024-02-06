@@ -3,6 +3,7 @@
 Example data taken directly from real calls to GitHub API documentation:
 https://docs.github.com/en/rest/releases/releases
 """
+
 import pytest
 from pytest_mock import MockerFixture
 
