@@ -64,14 +64,37 @@ Python 3.10. Mantid v6.7 and before use Python 3.8.
 
 Latest Release
 ##############
+There are three ways to create and manage a Conda environment: using Mambaforge, Miniforge, or Anaconda.
+It is recommended to use Mambaforge as it's faster and better at resolving dependencies. 
 
-To install Mantid into a new Conda environment use these options:
+Then, to install Mantid into a new Conda environment use these options:
 
 - `-n` to specify the name of your new environment
 - `-c` to add the 'mantid' Conda channel
 
 These options should be followed by the name of the package you want
-to install. This will probably be either the ``mantid`` python library
+to install. This will probably be any library from the ``mantid`` python library
+
+Method 1: installing using mambaforge (Recommended)
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+To install mambaforge please follow `this documentation <https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html>`__
+
+.. code-block:: sh
+
+   mamba create -n mantid_env -c mantid mantid
+
+or the ``mantidworkbench`` package containing the graphical-user-interface
+
+.. code-block:: sh
+
+   mamba create -n mantid_env -c mantid mantidworkbench
+
+Method 2: installing using miniforge or Anaconda
+++++++++++++++++++++++++++++++++++++++++++++++++
+
+To install mambaforge please follow `this documentation <https://kirenz.github.io/codelabs/codelabs/miniforge-setup>`__
+Alternativly, to install Anaconda follow `this page <https://docs.anaconda.com/free/anaconda/install/index.html>`__
 
 .. code-block:: sh
 
