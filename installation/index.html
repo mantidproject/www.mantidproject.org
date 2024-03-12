@@ -439,20 +439,25 @@ writing scripts etc.</p></li>
 Python 3.10. Mantid v6.7 and before use Python 3.8.</p>
 <section id="id1">
 <h3>Latest Release<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>It is recommended to use Mambaforge to create and manage a Conda environment for Mantid. Using mamba is preferable over conda as it’s faster and better at resolving dependencies.</p>
 <p>To install Mantid into a new Conda environment use these options:</p>
 <ul class="simple">
 <li><p><cite>-n</cite> to specify the name of your new environment</p></li>
 <li><p><cite>-c</cite> to add the ‘mantid’ Conda channel</p></li>
 </ul>
 <p>These options should be followed by the name of the package you want
-to install. This will probably be either the <code class="docutils literal notranslate"><span class="pre">mantid</span></code> python library</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantid
+to install. This will probably be any library from the <code class="docutils literal notranslate"><span class="pre">mantid</span></code> python library</p>
+<section id="installing-using-mambaforge">
+<h4>Installing using mambaforge<a class="headerlink" href="#installing-using-mambaforge" title="Link to this heading">#</a></h4>
+<p>To install mambaforge please follow <a class="reference external" href="https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html">this documentation</a></p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantid
 </pre></div>
 </div>
 <p>or the <code class="docutils literal notranslate"><span class="pre">mantidworkbench</span></code> package containing the graphical-user-interface</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantidworkbench
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantidworkbench
 </pre></div>
 </div>
+</section>
 </section>
 <section id="id2">
 <h3>Nightly Build<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
@@ -464,7 +469,7 @@ manual testing. Use with caution.</p>
 </div>
 <p>If you wish to use a nightly build then add the <code class="docutils literal notranslate"><span class="pre">nightly</span></code> label
 to the channel:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid/label/nightly<span class="w"> </span>mantidworkbench
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid/label/nightly<span class="w"> </span>mantidworkbench
 </pre></div>
 </div>
 </section>
@@ -473,7 +478,7 @@ to the channel:</p>
 <h3>How to Open Mantid Workbench (Conda)<a class="headerlink" href="#how-to-open-mantid-workbench-conda" title="Link to this heading">#</a></h3>
 <p>To open the Mantid Workbench provided in the <code class="docutils literal notranslate"><span class="pre">mantidworkbench</span></code> Conda package,
 you must first activate your Conda environment:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>mantid_env
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>activate<span class="w"> </span>mantid_env
 </pre></div>
 </div>
 <p>Then you can open Mantid with the following command:</p>
@@ -528,7 +533,10 @@ Data used for the <a class="reference external" href="https://docs.mantidproject
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conda">Conda</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Latest Release</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Latest Release</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#installing-using-mambaforge">Installing using mambaforge</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Nightly Build</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-open-mantid-workbench-conda">How to Open Mantid Workbench (Conda)</a></li>
 </ul>
