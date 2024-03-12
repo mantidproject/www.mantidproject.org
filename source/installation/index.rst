@@ -64,6 +64,7 @@ Python 3.10. Mantid v6.7 and before use Python 3.8.
 
 Latest Release
 ##############
+It is recommended to use Mambaforge to create and manage a Conda environment for Mantid. Using mamba is preferable over conda as it's faster and better at resolving dependencies.
 
 To install Mantid into a new Conda environment use these options:
 
@@ -71,17 +72,22 @@ To install Mantid into a new Conda environment use these options:
 - `-c` to add the 'mantid' Conda channel
 
 These options should be followed by the name of the package you want
-to install. This will probably be either the ``mantid`` python library
+to install. This will probably be any library from the ``mantid`` python library
+
+Installing using mambaforge
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+To install mambaforge please follow `this documentation <https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html>`__
 
 .. code-block:: sh
 
-   conda create -n mantid_env -c mantid mantid
+   mamba create -n mantid_env -c mantid mantid
 
 or the ``mantidworkbench`` package containing the graphical-user-interface
 
 .. code-block:: sh
 
-   conda create -n mantid_env -c mantid mantidworkbench
+   mamba create -n mantid_env -c mantid mantidworkbench
 
 Nightly Build
 #############
@@ -93,7 +99,7 @@ to the channel:
 
 .. code-block:: sh
 
-   conda create -n mantid_env -c mantid/label/nightly mantidworkbench
+  mamba create -n mantid_env -c mantid/label/nightly mantidworkbench
 
 ----
 
@@ -105,7 +111,7 @@ you must first activate your Conda environment:
 
 .. code-block:: sh
 
-   conda activate mantid_env
+  mamba activate mantid_env
 
 Then you can open Mantid with the following command:
 
