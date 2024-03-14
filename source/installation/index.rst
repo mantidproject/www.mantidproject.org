@@ -89,7 +89,7 @@ or the ``mantidworkbench`` package containing the graphical-user-interface
 
    mamba create -n mantid_env -c mantid mantidworkbench
 
-At present we only provide x86 release for OSX. This can still be used by those with Apple Silicon devices (M1, M2). You will need to have Rosetta installed and preceed the setup commands with 'CONDA_SUBDIR=osx-64'.
+For macOS we currently only provide x86 packages. These can still be used by those with Apple silicon devices (M1, M2). You will need to have Rosetta installed and precede the setup commands with 'CONDA_SUBDIR=osx-64'.
 For example if you want to install mantidworkbench use the following command:
 
 .. code-block:: sh
