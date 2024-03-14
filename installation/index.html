@@ -457,6 +457,11 @@ to install. This will probably be any library from the <code class="docutils lit
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantidworkbench
 </pre></div>
 </div>
+<p>For macOS we currently only provide x86 packages. These can still be used by those with Apple silicon devices (M1, M2). You will need to have Rosetta installed and precede the setup commands with ‘CONDA_SUBDIR=osx-64’.
+For example if you want to install mantidworkbench use the following command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">CONDA_SUBDIR</span><span class="o">=</span>osx-64<span class="w"> </span>mamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>mantid_env<span class="w"> </span>-c<span class="w"> </span>mantid<span class="w"> </span>mantidworkbench
+</pre></div>
+</div>
 </section>
 </section>
 <section id="id2">
