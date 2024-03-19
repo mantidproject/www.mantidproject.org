@@ -21,20 +21,20 @@ Unable to find `mantid` or `mantidworkbench`
 
 .. code-block:: sh
 	PackagesNotFoundError: The following packages are not available from current channels
-	
-If you get this error it may be because you have not included the mantid channel in your download command. Please ensure you include `-c mantid` when installing. 
+
+If you get this error it may be because you have not included the mantid channel in your download command. Please ensure you include `-c mantid` when installing.
 
 Example
 
 .. code-block:: sh
 
    mamba create -n mantid_env -c mantid mantid
-   
+
 You can also get this error when trying to install on Apple silicon devices. See :ref:`Installing on Apple silicon devices <osx_install>` for help.
 
 .. _osx_install:
 
-Installing on Apple silicon devices 
+Installing on Apple silicon devices
 ###################################
 
 For macOS we currently only provide x86 packages. These can still be used by those with Apple silicon devices (M1, M2). You will need to have Rosetta installed and precede the setup commands with 'CONDA_SUBDIR=osx-64'.
@@ -68,7 +68,7 @@ or
 .. code-block:: sh
 
 	channels: [conda-forge]
-	
+
 If either of these are in the file then please make sure there are no other channels added for accessing Mantid. For example any of the following will cause a 404 error and should be removed from `.condarc`
 
 .. code-block:: sh

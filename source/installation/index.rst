@@ -74,7 +74,7 @@ To install Mantid into a new Conda environment use these options:
 These options should be followed by the name of the package you want
 to install. This will probably be any library from the ``mantid`` python library
 
-Further installation details are provided below. Please check our :doc:`troubleshooting page <condafaq>` if you run into difficulties. 
+Further installation details are provided below. Please check our :doc:`troubleshooting page <condafaq>` if you run into difficulties.
 
 Installing using mambaforge
 +++++++++++++++++++++++++++++++++++++++++++++++++++
