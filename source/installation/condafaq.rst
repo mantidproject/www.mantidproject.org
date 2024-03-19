@@ -50,13 +50,13 @@ Unable to resolve dependencies
 ##############################
 
 If you are having problems with dependencies we recommend installing Mantid into a new clean environment with no other packages. Please do not specify any dependency versions e.g. Python. Any dependencies will be installed automatically of the version required to use Mantid.
-Problems with resolving dependencies is often caused by installing other packages into the same environment that require different versions of the same dependency. You can check what dependencies recent stable versions of mantid 
+Problems with resolving dependencies is often caused by installing other packages into the same environment that require different versions of the same dependency. You can check what dependencies recent stable versions of mantid
 available through conda-forge require by running the following
 
 .. code-block:: sh
 
 	mamba search -c mantid mantid --info
-	
+
 To find out the currrent depedencies being used in the nightly replace the channel name with `mantid/label/nightly` __.
 
 
