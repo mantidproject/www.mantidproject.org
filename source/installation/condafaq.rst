@@ -22,7 +22,7 @@ Unable to find `mantid` or `mantidworkbench`
 .. code-block:: sh
 	PackagesNotFoundError: The following packages are not available from current channels
 
-If you get this error it may be because you have not included the mantid channel in your download command. Please ensure you include `-c mantid` when installing.
+If you encounter this error it may be because you have not included the mantid channel in your download command. Please ensure you include `-c mantid` when installing.
 
 Example
 
@@ -30,7 +30,7 @@ Example
 
    mamba create -n mantid_env -c mantid mantid
 
-You can also get this error when trying to install on Apple silicon devices. See :ref:`Installing on Apple silicon devices <osx_install>` for help.
+You may also encounter this error when trying to install on Apple silicon devices. See :ref:`Installing on Apple silicon devices <osx_install>` for help.
 
 .. _osx_install:
 
@@ -49,15 +49,15 @@ For example if you want to install mantidworkbench use the following command:
 Unable to resolve dependencies
 ##############################
 
-If you are having problems with dependencies we recommend installing Mantid into a new clean environment with no other packages. Please do not specify any dependency versions e.g. Python. Any dependencies will be installed automatically of the version required to use Mantid.
-Problems with resolving dependencies is often caused by installing other packages into the same environment that require different versions of the same dependency. You can check what dependencies recent stable versions of mantid
-available through conda-forge require by running the following
+If you are having problems with dependencies we recommend installing Mantid into a new clean environment with no other packages. Please do not specify any dependency versions e.g. Python. All dependencies will be installed automatically with the version required to use Mantid.
+Problems with resolving dependencies is often caused by installing other packages into the same environment that require different versions of the same dependency. You can view the direct dependencies of recent stable versions of mantid 
+available through conda-forge require by running the following command
 
 .. code-block:: sh
 
 	mamba search -c mantid mantid --info
-
-To find out the currrent depedencies being used in the nightly replace the channel name with `mantid/label/nightly` __.
+	
+To list the currrent depedencies being used in the nightly replace the channel name with `mantid/label/nightly` __.
 
 
 .. _404_error:
@@ -65,7 +65,7 @@ To find out the currrent depedencies being used in the nightly replace the chann
 404 error when trying to install
 ################################
 
-Mantid is available through `conda-forge`. To access the Mantid channel please check your `.condarc` file. It should contain the following
+Mantid's dependencies are all available through `conda-forge`. To access this channel please check your `.condarc` file. It should contain the following
 
 .. code-block:: sh
 
@@ -89,4 +89,4 @@ If either of these are in the file then please make sure there are no other chan
 Still having problems?
 ######################
 
-If the above has not resolved your problem please post to our `community forum <https://forum.mantidproject.org>` or e-mail the tean directly on ``mantid-help@mantidproject.org``.
+If the above has not resolved your problem please post to our `community forum <https://forum.mantidproject.org>` or e-mail the team directly on ``mantid-help@mantidproject.org``.
