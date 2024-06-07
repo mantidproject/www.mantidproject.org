@@ -145,5 +145,8 @@ Below we provide links to various sets of sample data for use with Mantid:
 - `Muon <https://sourceforge.net/projects/mantid/files/Sample%20Data/SampleData-Muon.zip/download>`__:
   A sample of Muon files.
 
+- `MLZ <https://sourceforge.net/projects/mantid/files/Sample%20Data/SampleData-MLZ.zip/download>`__:
+  A sample of MLZ files.
+
 - `Training Course Data <https://sourceforge.net/projects/mantid/files/Sample%20Data/TrainingCourseData.zip/download>`__:
   Data used for the `mantid training courses <https://docs.mantidproject.org/nightly/tutorials/index.html#training>`__.
