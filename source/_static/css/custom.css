@@ -23,7 +23,7 @@
   display: block;
   margin: 0 auto;
   background-color: var(--pst-color-link);
-  color: var(--white);
+  color: var(--pst-color-white);
   text-align: center;
   width: 40%;
   padding: 1.6em 1em;
