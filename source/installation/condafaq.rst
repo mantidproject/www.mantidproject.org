@@ -20,6 +20,7 @@ Unable to find `mantid` or `mantidworkbench`
 ############################################
 
 .. code-block:: sh
+
 	PackagesNotFoundError: The following packages are not available from current channels
 
 If you encounter this error it may be because you have not included the mantid channel in your download command. Please ensure you include `-c mantid` when installing.
