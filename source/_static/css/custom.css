@@ -19,11 +19,12 @@
 
 /* Installation download button */
 .button,
-.button:hover {
+.button:hover,
+.button a:visited {
   display: block;
   margin: 0 auto;
   background-color: var(--pst-color-link);
-  color: var(--pst-color-white);
+  color: var(--pst-color-white) !important;
   text-align: center;
   width: 40%;
   padding: 1.6em 1em;
